@@ -23,6 +23,7 @@ export default function Input({amount,
                 value={amount}
                 onChange={(e) => onAmountChange&&onAmountChange(Number(e.target.value))}
                 className='w-96 border-none h-16 m-4 rounded-md text-center text-3xl'
+                min={0}
             />
             <div>
                <select value={selectCurrency} onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
